@@ -167,11 +167,4 @@ graph TB
   linkStyle 10 stroke:#2ecd71,stroke-width:2px;
   ```
 
-Neste diagrama:
-
-O usuário faz requisições que são direcionadas por um Balanceador de Carga.
-O Balanceador de Carga roteia a requisição para o serviço apropriado, seja ele o Serviço de Usuários, Serviço de Produtos, Serviço de Pedidos, Serviço de Pagamento ou Serviço de Envio.
-Cada serviço gerencia seu próprio banco de dados.
-
-
 A arquitetura de microsserviços é uma abordagem poderosa e flexível para o desenvolvimento de aplicações. Ao dividir uma aplicação em serviços menores e independentes, as equipes podem desenvolver, implantar e escalar cada serviço de forma independente. Isso não apenas acelera o desenvolvimento, mas também aumenta a resiliência do sistema como um todo. O diagrama acima ilustra como essa arquitetura pode ser aplicada a uma aplicação de comércio eletrônico, mas o princípio pode ser adaptado para qualquer tipo de aplicação.
