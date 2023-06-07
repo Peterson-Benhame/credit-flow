@@ -1,4 +1,4 @@
-# Documentação do Projeto CreditFlow#
+# Documentação do Projeto CreditFlow
 # Introdução
 O projeto CreditFlow é uma aplicação web desenvolvida em ASP.NET Core que fornece uma API para cálculo de crédito. O sistema permite que o usuário escolha entre diferentes tipos de crédito, cada um com sua própria taxa de juros, e calcula o valor total do crédito com juros.
 
@@ -123,6 +123,24 @@ Filtrando os resultados para incluir apenas as parcelas que ainda não foram pag
 Agrupando os resultados por Nome e CPF. Isso significa que cada linha de resultado representará um cliente único.
 
 Limitando os resultados a apenas 4 clientes.
+
+# Microsserviços
+
+Microsserviços, também conhecidos como a arquitetura de microsserviços, é um estilo arquitetônico que estrutura uma aplicação como uma coleção de serviços pequenos e independentes. Cada serviço é executado em seu próprio processo e se comunica com mecanismos leves, muitas vezes uma API de recursos HTTP. Esses serviços são construídos em torno de capacidades de negócios e podem ser implantados independentemente por equipes totalmente automatizadas.
+
+Cada microsserviço é responsável por uma funcionalidade específica e pode ser desenvolvido, implantado e escalado independentemente. Isso permite que as equipes de desenvolvimento trabalhem em paralelo, aumenta a velocidade de desenvolvimento e torna o sistema como um todo mais resiliente.
+
+Aqui está um exemplo de como uma aplicação de comércio eletrônico pode ser dividida em microsserviços:
+
+- Serviço de Usuários: Gerencia informações do usuário e autenticação.
+- Serviço de Produtos: Gerencia o catálogo de produtos.
+- Serviço de Pedidos: Gerencia a criação e o acompanhamento de pedidos.
+- Serviço de Pagamento: Gerencia transações de pagamento.
+- Serviço de Envio: Gerencia o envio de produtos.
+
+Cada um desses serviços pode ter seu próprio banco de dados e pode ser escrito em qualquer linguagem de programação.
+
+Aqui está o diagrama que ilustra a arquitetura de microsserviços para uma aplicação de comércio eletrônico:
 ```mermaid
 graph TB
   U["Usuário"] -- "Requisições" --> LB["Balanceador de Carga"]
@@ -148,3 +166,12 @@ graph TB
   linkStyle 9 stroke:#2ecd71,stroke-width:2px;
   linkStyle 10 stroke:#2ecd71,stroke-width:2px;
   ```
+
+Neste diagrama:
+
+O usuário faz requisições que são direcionadas por um Balanceador de Carga.
+O Balanceador de Carga roteia a requisição para o serviço apropriado, seja ele o Serviço de Usuários, Serviço de Produtos, Serviço de Pedidos, Serviço de Pagamento ou Serviço de Envio.
+Cada serviço gerencia seu próprio banco de dados.
+
+
+A arquitetura de microsserviços é uma abordagem poderosa e flexível para o desenvolvimento de aplicações. Ao dividir uma aplicação em serviços menores e independentes, as equipes podem desenvolver, implantar e escalar cada serviço de forma independente. Isso não apenas acelera o desenvolvimento, mas também aumenta a resiliência do sistema como um todo. O diagrama acima ilustra como essa arquitetura pode ser aplicada a uma aplicação de comércio eletrônico, mas o princípio pode ser adaptado para qualquer tipo de aplicação.
