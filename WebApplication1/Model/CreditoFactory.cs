@@ -6,6 +6,13 @@
         {
             switch (tipoCredito)
             {
+                case "CreditoConsignado":
+                    return new CreditoConsignado
+                    (
+                        valorCredito,
+                        quantidadeParcelas,
+                        primeiroVencimento
+                    );
                 case "CreditoDireto":
                     return new CreditoDireto
                     (
@@ -13,7 +20,27 @@
                         quantidadeParcelas,
                         primeiroVencimento
                     );
-                // Adicione casos para os outros tipos de crédito aqui...
+                case "CreditoImobiliario":
+                    return new CreditoImobiliario
+                    (
+                        valorCredito,
+                        quantidadeParcelas,
+                        primeiroVencimento
+                    );
+                case "CreditoPessoaFisica":
+                    return new CreditoPessoaFisica
+                    (
+                        valorCredito,
+                        quantidadeParcelas,
+                        primeiroVencimento
+                    );
+                case "CreditoPessoaJuridica":
+                    return new CreditoPessoaJuridica
+                    (
+                        valorCredito,
+                        quantidadeParcelas,
+                        primeiroVencimento
+                    );
                 default:
                     throw new ArgumentException("Tipo de crédito inválido.", nameof(tipoCredito));
             }

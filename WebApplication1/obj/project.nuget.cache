@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "OaBj9m0XV57n6oiNQJatgzW6XWpxucD9iLxPCNlwgwFimKwgqxWvjWieK22TJs5hAsyrnRDAuXm7UDr4PoloGg==",
+  "dgSpecHash": "6OX9UatTiFjJlao8/SLymgYMuQkBNYSLoDHnJRHAbIAAlaec7R2YmaRneqHF7RhlW5MP7npDZlm50KKBF2284w==",
   "success": true,
   "projectFilePath": "C:\\Users\\peter\\Source\\Repos\\credit-flow\\WebApplication1\\CreditFlow.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\mysqlconnector\\2.2.6\\mysqlconnector.2.2.6.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\peter\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }
